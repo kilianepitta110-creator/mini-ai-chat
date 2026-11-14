@@ -2,7 +2,7 @@
 
 A small, responsive chat app built with HTML, CSS and vanilla JavaScript. It sends text questions to an LLM through [OpenRouter](https://openrouter.ai) and shows the answer. No backend, no account, no framework.
 
-- **Live site:** NETLIFY_URL_HERE
+- **Live site:** https://miniiachat.netlify.app
 - **Repository:** https://github.com/kilianepitta110-creator/mini-ai-chat
 
 ## Setup
@@ -21,8 +21,8 @@ Deployment: public GitHub repository connected to Netlify, no build command, pub
 
 | Key | Contents |
 | --- | --- |
-| `miniAiChat.apiKey` | The visitor's own OpenRouter key |
-| `miniAiChat.history` | JSON array of `{ role, content }` messages (text only) |
+| `apiKey` | The visitor's own OpenRouter key |
+| `history` | JSON array of `{ role, content }` messages (text only) |
 
 The key is never in the GitHub repository. It lives only in each visitor's browser, so JavaScript running on this site can read it. **Forget key** removes the stored value and clears the copy held in memory. History never contains the key or the contents of attached files (only the file name).
 
@@ -52,4 +52,4 @@ Manual checks to complete before submission (tick only what you did): real quest
 
 ## AI usage statement
 
-I used Claude (Anthropic) to generate a first version of the HTML, CSS and JavaScript from the assignment text, and to simplify the HTML and CSS afterwards. I read the code, traced the Send flow (`handleSend` → `askModel` → `fetch`), and tested the cases listed above. My own change: WRITE_YOUR_OWN_CHANGE_HERE.
+I used Claude (Anthropic) to generate a first version of the  CSS and JavaScript from the assignment text I read the code, traced the Send flow (`handleSend` → `askModel` → `fetch`), and tested the cases listed above. My own change: I changed the color of the user messages in style.css.
