@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  margin: 0;
+  padding: 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* keyboard focus */
+input:focus, textarea:focus, button:focus {
+  outline: 3px solid orange;
+}
+
+.hint {
+  font-size: 14px;
+  color: #555;
+}
+
+.hint.ok { color: green; }
+.hint.error { color: red; }
+
+#conversation {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  min-height: 150px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.who {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.message.user {
+  background: #e3ecff;
+  margin-left: 20%;
+}
+
+.message.assistant {
+  background: white;
+  margin-right: 20%;
+}
+
+.message.error {
+  background: #fdeaea;
+  color: red;
+  border-color: red;
+}
+
+.status { color: #555; }
+.status.error { color: red; }
+
+/* phone: buttons take the full width */
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  .message.user { margin-left: 0; }
+  .message.assistant { margin-right: 0; }
+}

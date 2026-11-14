@@ -36,6 +36,14 @@
     <form id="chat-form">
       <label for="question">Your question</label>
       <textarea id="question" rows="3" placeholder="Type a question..."></textarea>
+
+      <label for="file-input">Attach a text file (optional, .txt, max 100 KB)</label>
+      <input type="file" id="file-input" accept=".txt,text/plain">
+      <p id="file-info" hidden>
+        Attached: <strong id="file-name"></strong>
+        <button type="button" id="remove-file">Remove</button>
+      </p>
+
       <button type="submit" id="send">Send</button>
     </form>
   </main>
